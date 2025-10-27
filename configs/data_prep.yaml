@@ -7,7 +7,7 @@ download:
 
 paths:
   raw_data: data/raw/wikipedia_10M.jsonl
-  deduped_data: data/processed/wikipedia_dedup.jsonl
+  deduped_data: data/processed/wikipedia_deduped.jsonl
   removed: data/processed/wikipedia_removed.jsonl
   pretrain_manifest: data/splits/pretrain_manifest.jsonl
   retrieval_manifest: data/splits/retrieval_manifest.jsonl

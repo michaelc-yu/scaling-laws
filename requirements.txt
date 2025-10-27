@@ -10,3 +10,9 @@ flake8>=7.0.0
 mwxml
 datasets
 tiktoken
+torch
+faiss-cpu>=1.7.4
+# faiss-gpu # only works on GPU
+numpy>=1.23,<2.0
+rank_bm25
+einops>=0.6.0
