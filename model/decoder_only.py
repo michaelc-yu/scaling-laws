@@ -86,6 +86,8 @@ class DecoderOnlyLM(nn.Module):
         idx:     (batch, seq)
         targets: (batch, seq), optional
         """
+        # print(f"idx shape: {idx.shape}")
+        # print(f"targets shape: {targets.shape}")
         B, T = idx.shape
 
         # token and positional embedding
