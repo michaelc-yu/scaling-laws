@@ -47,6 +47,9 @@ Modify configs/data.yaml, configs/model_sizes.yaml, and configs/training.yaml.
 python -m pretrain.train_model
 ```
 
+### 8: Evaluation and everything else (WIP)
+
+
 ### Note on Running Scripts
 
 This repo uses Python's **module-based execution** to ensure proper relative imports.
