@@ -38,11 +38,19 @@ bash scripts/run_build_index.sh
 ```bash
 python -m wandb login
 ```
-### 6: Modify configs to prepare for training
 
-Modify configs/data.yaml, configs/model_sizes.yaml, and configs/training.yaml.
+### 6: Run experiments by setting desired parameters in pretrain/train_experiment_driver.py and executing it
 
-### 7: Run training
+Edit EXPERIMENTS list in pretrain/train_experiment_driver.py then run:
+```bash
+python -m pretrain.train_experiment_driver
+```
+This will run all parameter combinations and execute train_model on each of them. Hopefully easier to track training runs this way.
+
+
+#### 6.5 (Optional): Can also train by directly reading from yaml file but this shouldn't be needed since above step can do all this easier
+
+Modify configs/data.yaml, configs/model_sizes.yaml, and configs/training.yaml. Then run training with
 ```bash
 python -m pretrain.train_model
 ```
