@@ -55,7 +55,14 @@ Modify configs/data.yaml, configs/model_sizes.yaml, and configs/training.yaml. T
 python -m pretrain.train_model
 ```
 
-### 7: Evaluation and everything else (WIP)
+### 7: Download and prepare the eval datasets
+This will download and prepare 3 datasets (GSM8K, StrategyQA, and SVAMP)
+```bash
+chmod +x scripts/prepare_all_datasets.sh
+bash scripts/prepare_all_datasets.sh
+```
+
+### 8: Evaluation and everything else (WIP)
 
 
 ### Note on Running Scripts
